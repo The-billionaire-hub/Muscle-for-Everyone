@@ -1,0 +1,125 @@
+/* Apply styles only to blog content inside <body> excluding header and footer */
+body > h1,
+body > p,
+body > ul,
+body > h2,
+body > h3 {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.5px;
+  animation: fadeIn 1s ease-in-out both;
+}
+
+/* Headline style with animation */
+body > h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  color: #212529;
+  text-align: center;
+  letter-spacing: 1.2px;
+  animation-delay: 0.1s;
+}
+
+/* Subheadings with animation */
+body > h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-top: 35px;
+  color: #0d6efd;
+  letter-spacing: 0.8px;
+  animation-delay: 0.2s;
+}
+
+body > h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-top: 25px;
+  color: #495057;
+  letter-spacing: 0.6px;
+  animation-delay: 0.3s;
+}
+
+/* Paragraph styling with animation */
+body > p {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: #343a40;
+  margin-bottom: 22px;
+  letter-spacing: 0.6px;
+  animation-delay: 0.4s;
+}
+
+/* List styling with animation */
+body > ul {
+  font-size: 1.1rem;
+  color: #212529;
+  margin-bottom: 22px;
+  padding-left: 45px;
+  letter-spacing: 0.5px;
+  animation-delay: 0.5s;
+}
+
+body > ul li {
+  margin-bottom: 12px;
+  position: relative;
+  animation: slideIn 0.8s ease-in-out both;
+  animation-delay: 0.6s;
+}
+
+/* Highlighted text */
+strong {
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+}
+
+em {
+  color: #0d6efd;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+/* Emoji marker size */
+body > ul li::marker {
+  font-size: 1.2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Remove blank space — full width but centered content */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* Header & Footer untouched, Bootstrap styling remains */
+header, footer {
+  all: unset;
+}
+

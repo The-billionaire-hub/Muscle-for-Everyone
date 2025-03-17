@@ -70,26 +70,114 @@ header {
     transform: scale(1.05);    /* subtle zoom effect */
 }
 
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 28px;
-  }
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  p.lead {
-    font-size: 18px;
-  }
+/* Custom Hero Section Styling */
+.hero-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #1a1a1a;
+  background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-out;
+}
 
-  .btn {
-    width: 100%;
-    font-size: 16px;
-  }
+/* Main Headline */
+.hero-section h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #2c3e50;
+  animation: textPop 1s ease-in-out;
+}
 
-  .hero-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+/* Subheadline */
+.hero-section h2 {
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #34495e;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+/* Paragraph */
+.hero-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #444;
+  animation: fadeInUp 1.4s ease-out;
+}
+
+/* Button inside Hero Section */
+.hero-section .btn-hero {
+  padding: 12px 25px;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: fadeInUp 1.6s ease-out;
+}
+
+.hero-section .btn-hero:hover {
+  background-color: #3498db;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+
+@keyframes textPop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+  .hero-section h2 {
+    font-size: 1.4rem;
+  }
+}
+
+
+
+
+
+
+
 
 
 
