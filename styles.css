@@ -70,6 +70,28 @@ header {
     transform: scale(1.05);    /* subtle zoom effect */
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  p.lead {
+    font-size: 18px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+
 
 
 
